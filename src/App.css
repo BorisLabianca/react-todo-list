@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  padding: 62px 69px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 130px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header span {
+  font-size: 48px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header .top-left-icon {
+  border: 10px solid #5c48d3;
+  border-radius: 5px;
+  height: 50px;
+  width: 60px;
+  box-sizing: border-box;
+  color: #5c48d3;
+}
+.task-list {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 0 0 0 493px;
+}
+.new-task {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+  font-size: 28px;
+}
+.new-order {
+  order: 1;
+}
+.strikethrough {
+  text-decoration: line-through;
+}
+.trash-icon {
+  color: #5c48d3;
+}
+.add-task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 57px;
+  margin-top: 148px;
+}
+.input-task {
+  width: 548px;
+  height: 65px;
+  border-radius: 10px;
+  background-color: #f2f7fd;
+  border: 1px solid #5c48d3;
+  font-size: 24px;
+}
+.new-task-submission {
+  width: 130px;
+  height: 65px;
+  border-radius: 10px;
   color: white;
+  background-color: #5c48d3;
+  font-size: 22px;
 }
-
-.App-link {
-  color: #61dafb;
+footer {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+  color: #5c48d3;
+  margin: 100px 0 0 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #5c48d3;
 }
